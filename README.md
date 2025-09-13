@@ -1,40 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🏡 ALX Listing App
 
-## Getting Started
+The **ALX Listing App** is a project built as part of the ALX Intermediate Frontend program.  
+Its goal is to create a simplified **Airbnb-style listing page** that showcases modern frontend best practices with **Next.js, TypeScript, Tailwind CSS, and ESLint**.
 
-First, run the development server:
+---
+
+## ✨ Project Goals
+
+- Build a responsive listing page similar to Airbnb.  
+- Explore **Next.js (Pages Router)** with TypeScript support.  
+- Apply **Tailwind CSS** for rapid and consistent styling.  
+- Maintain **clean code quality** with ESLint.  
+- Organize components, constants, and interfaces for scalability.  
+
+---
+
+## 📂 Project Structure
+
+Here’s an overview of the directory structure:
+
+```
+
+alx-listing-app/
+├── components/        # Reusable UI building blocks (e.g., Card, Navbar, Button)
+├── interfaces/        # TypeScript interfaces & types for props, API responses, etc.
+├── constants/         # Static values (e.g., mock data, configuration constants)
+├── public/
+│   └── assets/        # Public images, icons, and static assets
+├── pages/             # Next.js pages (since we disabled the App Router)
+├── styles/            # Global styles (includes Tailwind imports)
+├── package.json       # Project metadata and dependencies
+├── postcss.config.js  # PostCSS configuration for Tailwind
+├── tailwind.config.js # Tailwind CSS configuration (optional in v4+)
+└── README.md          # Project documentation
+
+```
+
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to run the project locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Aalphakeem-Adroit/alx-listing-app.git
+cd alx-listing-app
+````
+
+### 2. Install Dependencies
+
+Make sure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
+Then install the required dependencies:
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
+
+Start the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be running at:
+👉 [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 4. Build for Production (Optional)
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run build
+npm start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+* **Next.js** – React framework for production-ready apps
+* **TypeScript** – Static typing for JavaScript
+* **Tailwind CSS** – Utility-first CSS framework
+* **ESLint** – Linting for consistent code style
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 📌 Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* By default, Tailwind CSS v4 works without `tailwind.config.js`.
+* You can generate a config file if you need custom colors, fonts, or themes:
 
-## Deploy on Vercel
+  ```bash
+  npx tailwindcss init
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 👨‍💻 Author
+
+Built with ❤️ by **Busari Abdulhakeem Tunde (Alphakeem Adroit)** as part of the **ALX SE program**.
